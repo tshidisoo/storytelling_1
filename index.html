@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stories for Listening Practice</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <h1>Stories for Listening Practice</h1>
+    <div class="instructions">📸 Remember to take a screenshot of your score after the quiz! 📸</div>
+
+    <div class="video-grid" id="videoContainer"></div>
+
+    <div id="quizModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="modalTitle">Quiz</h2>
+                <span class="close-btn" onclick="closeModal()">&times;</span>
+            </div>
+            <div class="quiz-body">
+                <form id="quizForm">
+                    <div id="questionsContainer"></div>
+                    <button type="button" class="submit-btn" onclick="checkAnswers()">Submit Answers</button>
+                </form>
+                <div id="resultArea" class="result-area">
+                    <h3>Quiz Complete!</h3>
+                    <div class="score-text" id="scoreDisplay"></div>
+                    <p>Great job! Don't forget to screenshot this result.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
