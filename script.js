@@ -135,6 +135,91 @@ const videoData = [
             { q: "What did the Emperor do when people laughed?", options: ["He stopped", "He ran back to the palace", "He fought them", "He laughed too"], answer: 1 },
             { q: "How did the tailor leave?", options: ["With suitcases full of gold", "Empty handed", "In chains", "Without a carriage"], answer: 0 }
         ]
+    },
+    {
+        id: "GxcGVCEEdcU",
+        title: "The Tortoise and the Hare",
+        url: "https://youtu.be/GxcGVCEEdcU",
+        questions: [
+            { q: "How does the hare usually run?", options: ["Very fast", "Very slowly", "Carefully", "Quietly"], answer: 0 },
+            { q: "How does the tortoise move?", options: ["Quickly", "Very slowly", "Loudly", "Fast"], answer: 1 },
+            { q: "Why does the hare laugh at the tortoise?", options: ["Because the tortoise walks slowly", "Because he is green", "Because he is funny", "Because he is fast"], answer: 0 },
+            { q: "How does the tortoise walk during the race?", options: ["Carefully and steadily", "Angrily", "Quickly", "Badly"], answer: 0 },
+            { q: "What does the hare decide to do under the tree?", options: ["Eat well", "Sleep well", "Sing loudly", "Work hard"], answer: 1 },
+            { q: "How does the hare wake up when he realizes he's late?", options: ["Slowly", "Suddenly and quickly", "Quietly", "Carefully"], answer: 1 },
+            { q: "Did the tortoise do his best?", options: ["No, he didn't", "Yes, he worked very hard and well", "He was lazy", "He slept"], answer: 1 },
+            { q: "Who ultimately wins the race?", options: ["The Hare", "The Tortoise", "The Fox", "The Owl"], answer: 1 },
+            { q: "How does the tortoise cross the finish line?", options: ["Quickly and jumping", "Slowly but surely", "Running fast", "Flying"], answer: 1 },
+            { q: "What is the moral of the story?", options: ["Fast runners always win", "Slow and steady wins the race", "Never sleep", "Always run fast"], answer: 1 }
+        ]
+    },
+    {
+        id: "0W86K1jBJFI",
+        title: "Little Red Riding Hood",
+        url: "https://youtu.be/0W86K1jBJFI",
+        questions: [
+            { q: "Why does Little Red Riding Hood have to visit her grandmother?", options: ["Because she is sick", "Because it is her birthday", "Because she wants to play", "Because she is hungry"], answer: 0 },
+            { q: "What does her mother tell her she has to do on her journey?", options: ["Go straight on and stay on the path", "Run as fast as she can", "Climb a tree", "Turn left and swim"], answer: 0 },
+            { q: "Why does she stop in the forest?", options: ["Because she has to sleep", "Because she wants to pick beautiful flowers", "Because she is lost", "Because it is raining"], answer: 1 },
+            { q: "When she turns left off the path, who does she meet?", options: ["A friendly woodcutter", "A fairy", "A dangerous wolf", "A little bear"], answer: 2 },
+            { q: "What does the wolf ask her?", options: ["\"Where do you have to go?\"", "\"What is your name?\"", "\"Do you like apples?\"", "\"Can you run fast?\""], answer: 0 },
+            { q: "How does the wolf get to the house first?", options: ["He goes straight on a shorter path", "He flies over the trees", "He takes a bus", "He walks very slowly"], answer: 0 },
+            { q: "Why does the wolf wear grandmother's clothes?", options: ["Because he is cold", "Because he has to trick Little Red Riding Hood", "Because they look nice", "Because his clothes are dirty"], answer: 1 },
+            { q: "Little Red says, \"Why are your ears so big?\" What is his answer?", options: ["\"Because I listen to music\"", "\"Because I have to hear you better\"", "\"Because I am a wolf\"", "\"Because I am cold\""], answer: 1 },
+            { q: "Who finally saves Little Red Riding Hood and her grandmother?", options: ["Her mother", "The wolf", "A brave woodcutter", "A police officer"], answer: 2 },
+            { q: "What did she learn she always has to do next time?", options: ["Listen to her mother and go straight on", "Talk to stranger wolves", "Walk slowly in the dark", "Pick more flowers"], answer: 0 }
+        ]
+    },
+    {
+        id: "_svBrlehmMo",
+        title: "The Ant and the Grasshopper",
+        url: "https://youtu.be/_svBrlehmMo",
+        questions: [
+            { q: "What season is it at the beginning of the story?", options: ["Winter", "Spring", "Summer", "Autumn"], answer: 2 },
+            { q: "What is the ant doing during the warm days?", options: ["Working hard to collect food", "Sleeping in the sun", "Singing loudly", "Playing games"], answer: 0 },
+            { q: "What is the grasshopper doing?", options: ["Helping the ant", "Building a warm house", "Singing and playing all day", "Crying"], answer: 2 },
+            { q: "Why does the ant work so hard?", options: ["Because he enjoys working", "To save food for the cold winter", "Because the grasshopper told him to", "Because he is hungry right now"], answer: 1 },
+            { q: "What happens when the seasons change to winter?", options: ["It gets very hot", "It gets cold and snow falls", "The flowers bloom beautifully", "The leaves turn green"], answer: 1 },
+            { q: "How does the grasshopper feel in the winter?", options: ["Cold and very hungry", "Warm and happy", "Tired from working", "Excited to play in the snow"], answer: 0 },
+            { q: "Where does the grasshopper go to ask for help?", options: ["To the ant's house", "To the bear's warm cave", "To the top of a tree", "To the big city"], answer: 0 },
+            { q: "Does the ant have enough food?", options: ["No, he is starving", "Yes, because he worked hard in the summer", "He only has a little bit left", "He lost all his food"], answer: 1 },
+            { q: "What does the ant do when the grasshopper asks for food?", options: ["He chases him away", "He shares his food and lets him in", "He laughs at him", "He tells him to sing to keep warm"], answer: 1 },
+            { q: "What is the important lesson of this story?", options: ["Play all summer long", "Winter is the most fun season", "Work hard today to be ready for tomorrow", "Ants are mean to grasshoppers"], answer: 2 }
+        ]
+    },
+    {
+        id: "FU_0NF_jrgE",
+        title: "The Bird and the Whale",
+        url: "https://youtu.be/FU_0NF_jrgE",
+        questions: [
+            { q: "Where does the whale live?", options: ["In the dark forest", "Deep in the sea", "High in the sky", "On a tall mountain"], answer: 1 },
+            { q: "What does the bird like doing?", options: ["Swimming deep", "Flying and singing high in the sky", "Eating big fish", "Sleeping all day"], answer: 1 },
+            { q: "What does the whale like doing?", options: ["Flying high above the clouds", "Swimming deep in the ocean", "Singing in the green trees", "Running on the beach"], answer: 1 },
+            { q: "Where do the bird and the whale first meet?", options: ["At the surface of the water", "High up in the sky", "At the very bottom of the sea", "In a tall tree branch"], answer: 0 },
+            { q: "How do they communicate with each other?", options: ["They write long letters", "They sing beautiful songs to each other", "They dance together", "They talk on the phone"], answer: 1 },
+            { q: "What is the big problem they face as friends?", options: ["They don't like each other anymore", "They like doing different things in different places", "The whale is too loud", "The bird is too small to see"], answer: 1 },
+            { q: "Can the whale go into the sky to fly with the bird?", options: ["Yes, very easily", "No, whales can't fly", "Only in the summer time", "Sometimes when it rains"], answer: 1 },
+            { q: "Can the bird go deep under the water with the whale?", options: ["Yes, he loves it", "No, birds can't breathe underwater", "Only to catch big fish", "Yes, to sleep comfortably"], answer: 1 },
+            { q: "What do they decide to do at the end of the story?", options: ["Stay together forever", "Go their separate ways but always remember each other", "The bird learns to swim", "The whale learns to fly"], answer: 1 },
+            { q: "What does the story teach us about friendship?", options: ["Birds and whales are exactly the same", "Friends can like doing different things and still care for each other", "Swimming is much better than flying", "Never talk to big whales"], answer: 1 }
+        ]
+    },
+    {
+        id: "K5gr-A03RFM",
+        title: "Bremen Town Musicians",
+        url: "https://youtu.be/K5gr-A03RFM",
+        questions: [
+            { q: "Which group of animals makes up the Bremen Town Musicians?", options: ["Dog, Cat, Mouse, Cow", "Donkey, Dog, Cat, Rooster", "Pig, Horse, Sheep, Goat", "Lion, Tiger, Bear, Wolf"], answer: 1 },
+            { q: "Why did the donkey leave his home?", options: ["He wanted to travel the world", "He was too old and his master didn't want him anymore", "He was very angry", "He found a new job in town"], answer: 1 },
+            { q: "What did the donkey want to become in Bremen?", options: ["A famous farmer", "A town musician", "The new king", "A brave guard"], answer: 1 },
+            { q: "Why was the dog sitting by the road feeling sad?", options: ["He was too old to hunt for his master", "He lost his favorite bone", "He was very hungry", "He didn't like barking anymore"], answer: 0 },
+            { q: "Why was the cat looking miserable?", options: ["She couldn't run fast enough to catch mice anymore", "She lost her favorite toy", "She was feeling very cold", "She hated loud music"], answer: 0 },
+            { q: "Why was the rooster crowing so loudly?", options: ["Because it was early morning", "Because he was going to be made into soup that evening", "Because he was very happy", "Because he saw the bright sun"], answer: 1 },
+            { q: "Where did the tired animals decide to sleep on their journey?", options: ["In a big comfortable hotel", "In a dark forest near a large tree", "In a warm barn", "Right in the middle of Bremen"], answer: 1 },
+            { q: "Who was actually living in the cozy house they found in the forest?", options: ["A very kind old lady", "A dangerous group of robbers", "A big scary bear", "The rich mayor of Bremen"], answer: 1 },
+            { q: "How did the animals manage to scare the robbers away?", options: ["They quickly called the police", "They stood on each other's backs and made a loud, scary noise", "They ran in and bit them", "They started a big fire"], answer: 1 },
+            { q: "Did the animals ever actually reach the town of Bremen?", options: ["Yes, and they played music for the king", "No, they happily stayed in the robbers' house forever", "Yes, but they quickly came back", "No, they got hopelessly lost"], answer: 1 }
+        ]
     }
 ];
 
@@ -143,10 +228,12 @@ let currentQuizIndex = -1;
 // Render Video Grid
 function renderVideoGrid() {
     const grid = document.getElementById('videoContainer');
+    grid.innerHTML = ''; // Ensure the grid is clear before rendering
     videoData.forEach((video, index) => {
         const card = document.createElement('div');
         card.className = 'video-card';
 
+        // Using standard hqdefault thumbnail logic
         const thumbUrl = `https://img.youtube.com/vi/${video.id}/hqdefault.jpg`;
 
         card.innerHTML = `
