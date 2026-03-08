@@ -233,7 +233,6 @@ function renderVideoGrid() {
         const card = document.createElement('div');
         card.className = 'video-card';
 
-        // Using standard hqdefault thumbnail logic
         const thumbUrl = `https://img.youtube.com/vi/${video.id}/hqdefault.jpg`;
 
         card.innerHTML = `
