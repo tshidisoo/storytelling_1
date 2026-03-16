@@ -220,6 +220,23 @@ const videoData = [
             { q: "How did the animals manage to scare the robbers away?", options: ["They quickly called the police", "They stood on each other's backs and made a loud, scary noise", "They ran in and bit them", "They started a big fire"], answer: 1 },
             { q: "Did the animals ever actually reach the town of Bremen?", options: ["Yes, and they played music for the king", "No, they happily stayed in the robbers' house forever", "Yes, but they quickly came back", "No, they got hopelessly lost"], answer: 1 }
         ]
+    },
+    {
+        id: "lMCG5rLlDdI",
+        title: "The Three Little Pigs",
+        url: "https://youtu.be/lMCG5rLlDdI?si=1bopOfbjQr7dGcdw",
+        questions: [
+            { q: "What did the mommy pig warn her children about before they left?", options: ["A bad winter storm", "The big bad wolf", "Getting lost in the dark", "Running out of food"], answer: 1 },
+            { q: "What material did the first lazy little pig use to build his house?", options: ["Bricks", "Wood", "Straw", "Mud"], answer: 2 },
+            { q: "What material did the second little pig use to build his house?", options: ["Sticks and branches", "Leaves", "Straw", "Heavy stones"], answer: 0 },
+            { q: "What kind of house did the third little pig build?", options: ["A tent made of cloth", "A fast house of wood", "A tall house of glass", "A sturdy house of brick"], answer: 3 },
+            { q: "What did the pigs reply when the wolf asked to come in?", options: ["Go away, wolf!", "Not by the hair on my chinny chinny chin", "We are not home", "You can come in later"], answer: 1 },
+            { q: "What did the wolf say right before he destroyed the first two houses?", options: ["I will break down the door!", "I'll huff and I'll puff and I'll blow your house down!", "I will climb through the window!", "I am very hungry!"], answer: 1 },
+            { q: "What happened to the second pig's stick house when the wolf blew on it?", options: ["It stood firm", "The roof flew off", "It shuddered, cracked, and collapsed", "It caught on fire"], answer: 2 },
+            { q: "What happened when the wolf tried to blow down the third pig's brick house?", options: ["The door broke", "The chimney fell off", "The wind howled but the brick walls stood firm", "The house shook and cracked"], answer: 2 },
+            { q: "How did the angry wolf try to get inside the brick house?", options: ["He dug a tunnel under it", "He broke a window", "He knocked it down with a rock", "He slid down the chimney"], answer: 3 },
+            { q: "What was waiting for the wolf at the bottom of the chimney?", options: ["A trap door", "A great iron pot filled with boiling water", "The three pigs with sticks", "A locked fireplace"], answer: 1 }
+        ]
     }
 ];
 
@@ -257,8 +274,11 @@ function openQuiz(index) {
     const video = videoData[index];
     document.getElementById('modalTitle').innerText = `Quiz: ${video.title}`;
     const questionsContainer = document.getElementById('questionsContainer');
+    
+    // This entirely clears the previous questions, effectively resetting the radio buttons
     questionsContainer.innerHTML = '';
 
+    // Hide the result area and ensure the submit button is visible again
     document.getElementById('resultArea').style.display = 'none';
     document.querySelector('.submit-btn').style.display = 'block';
 
@@ -298,17 +318,31 @@ function checkAnswers() {
     const total = video.questions.length;
     let allAnswered = true;
 
+    // STEP 1: Check if all questions are answered FIRST
     video.questions.forEach((qObj, qIdx) => {
         const selected = document.querySelector(`input[name="q${qIdx}"]:checked`);
-        const feedbackDiv = document.getElementById(`feedback-q${qIdx}`);
-
         if (!selected) {
             allAnswered = false;
         }
+    });
+
+    if (!allAnswered) {
+        alert("Please answer all questions before submitting.");
+        return; // Stop the function here so we don't reveal answers
+    }
+
+    // STEP 2: Calculate score, show feedback, and lock radio buttons
+    video.questions.forEach((qObj, qIdx) => {
+        const selected = document.querySelector(`input[name="q${qIdx}"]:checked`);
+        const feedbackDiv = document.getElementById(`feedback-q${qIdx}`);
+        
+        // Disable the radio buttons so they can't change their answer
+        const allRadios = document.querySelectorAll(`input[name="q${qIdx}"]`);
+        allRadios.forEach(radio => radio.disabled = true);
 
         feedbackDiv.style.display = 'block';
 
-        if (selected && parseInt(selected.value) === qObj.answer) {
+        if (parseInt(selected.value) === qObj.answer) {
             score++;
             feedbackDiv.innerHTML = `<span class="correct-answer">✓ Correct!</span>`;
         } else {
@@ -317,11 +351,7 @@ function checkAnswers() {
         }
     });
 
-    if (!allAnswered) {
-        alert("Please answer all questions before submitting.");
-        return;
-    }
-
+    // STEP 3: Display the final score
     const resultArea = document.getElementById('resultArea');
     const scoreDisplay = document.getElementById('scoreDisplay');
 
